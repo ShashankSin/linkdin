@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.center{
+    margin: 0 auto;
+    width: 960px;
+}
+/* nav-banner start */
+.nav-banner{
+    background-color: red;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner ul{
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+.banner ul li{
+    list-style: none;
+    background-color: aquamarine;
+}
+.banner ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 15px;
+    font-size: 17px;
+    line-height: 35px;
+    cursor:default;
+}
+.banner ul li:hover{
+    background-color: aqua;
+}
+.banner ul li a:hover{
+    font-size: 18px;
+    padding-bottom: 3px;
+    border-bottom: 5px solid red;
+}
+.education{
+    position: relative;
+}
+.education:hover ul{
+    z-index: 1;
+    visibility: visible;
+    opacity: inherit;
+}
+.education ul{
+    position: absolute;
+    top: 35px;
+    left: -40px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+}
+.education ul li{
+    display: grid;
+    grid-auto-rows: row;
+}
+.education ul li span{
+    background-color: #979797;
+    padding: 7px 35px 8px 10px;
+    border-top:3px solid #696969;
+}
+.education ul li span:last-child{
+    border-bottom: 3px solid #696969;
+}
+.education ul li span:hover{
+    border-left: 3px solid #696969;
+}
+/* nav-banner end */
+
+/* Gallery start */
+.gallery div div{
+    background-color: bisque;
+}
+.gallery img{
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.owl-nav div{
+    height: 50px !important;
+    width: 50px !important;
+    background-color: red !important;
+}
+
+
+
+
+
+
+
+
+
+/* login start */
+.login{
+    background-color: #979797;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.login form{
+    display: grid;
+    justify-content: center;
+}
+.login form span{
+    display: grid;
+    grid-auto-flow: column;
+}
+.login form input{
+    padding: 4px 3px 2px 5px;
+}

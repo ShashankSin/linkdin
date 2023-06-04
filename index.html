@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <!-- link start -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- owlcarousel start -->
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+<link rel="stylesheet" href="owl/owl.theme.default.min.css">
+    <!-- owlcarousel end -->
+    <!-- link end -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- nan.banner start -->
+        <nav class="nav-banner">
+            <div class="banner">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li class="education">
+                        <a href="#">Education</a>
+                        <ul>
+                            <li>
+                                <span>SEE</span>
+                                <span>+2</span>
+                                <span>Bachelors</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <!-- gallery start -->
+    <div class="gallery">
+        <div class="owl-carousel">
+            <div> <img src="images/Owl.jpg" alt="owl"> </div>
+            <div> <img src="images/bird for miti.jpg" alt="owl"> </div>
+            <div> <img src="images/cat for miti.jpg" alt="owl"> </div>
+            <div> <img src="images/fish1.jpg" alt="owl"> </div>
+            <div> <img src="images/Gengar.png" alt="owl"> </div>
+            <div> <img src="images/icecreamamiti.jpg" alt="owl"> </div>
+            <div> <img src="images/turtle.jpg" alt="owl"> </div>
+        </div>
+    </div>
+    <!-- gallery end -->
+
+    
+
+    <!-- nan.banner end -->
+    <!-- login start-->
+        <!-- <div class="login">
+            <form>
+                <span>Username:</span><input type="text" placeholder="Username">
+                <span>Password:</span><input type="password" placeholder="Password">
+            </form>
+        </div> -->
+    <!--login end -->
+    
+    <script src="owl/jquery.min.js"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+
+    
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop:true,
+            nav:true,
+            margin:10,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },            
+                960:{
+                    items:3
+                },
+                1200:{
+                    items:4
+                }
+            }
+        });
+        owl.on('mousewheel', '.owl-stage', function (e) {
+            if (e.deltaY>0) {
+                owl.trigger('next.owl');
+            } else {
+                owl.trigger('prev.owl');
+            }
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
